@@ -2,9 +2,9 @@
 public class CruiseShip extends Ship {
 		private int maxPass;
 		
-	public CruiseShip(String s, String yearB, int max) {
+	public CruiseShip(String s, String yearB) {
 		super(s, yearB);
-		maxPass = max;		
+				
 	}
 
 	public int getMaxPass() {
@@ -17,8 +17,7 @@ public class CruiseShip extends Ship {
   
 	@Override
 	public String toString(){
-		return("The name of the ship is " + super.getShip() + ".\nThe year built is " + 
-	super.getYearBuilt() + ".\nThe max number of passengers is " + getMaxPass());
+		return("The name of the ship is " + getShip() +".\nThe max number of passengers is " + maxPass);
 	}
 	
 	

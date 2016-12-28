@@ -7,7 +7,10 @@ public class Ship {
 		ship = s;
 		yearBuilt = yearB;
 	}
-
+    public Ship(){
+    	ship = " ";
+    	yearBuilt = " ";
+    }
 	public String getShip() {
 		return ship;
 	}
@@ -21,11 +24,12 @@ public class Ship {
 	}
 
  void setYearBuilt(String yearB) {
-		yearBuilt = yearB;
+		yearBuilt = yearB
+				;
 	}
 	@Override
 	public String toString(){
-		return("The name of the ship is " + getShip() + "The year it was built is " + getYearBuilt());
+		return("The name of the ship is " + ship + "The year it was built is " + yearBuilt);
 	}
 
 }
